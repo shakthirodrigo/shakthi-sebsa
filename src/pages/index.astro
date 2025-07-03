@@ -1,11 +1,456 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="SEBSA - Your ERP Partner of Choice">
+  <Navigation />
+  <main class="main-content">
+    <Hero />
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <span class="inline-block px-4 py-2 bg-brand-100 text-brand-700 rounded-full text-sm font-medium">About Us</span>
+              <h2 class="text-4xl lg:text-5xl font-bold">
+                Simple. <span class="text-brand-600">Fast.</span> Accurate.
+              </h2>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Our mission is to deliver <strong class="text-gray-900">simple, fast and accurate solutions</strong> that provide a solid foundation for businesses to achieve operational excellence and make informed corporate decisions.
+              </p>
+            </div>
+            
+            <div class="grid sm:grid-cols-3 gap-6">
+              <div class="text-center p-6 bg-gradient-to-br from-brand-50 to-slate-50 rounded-2xl">
+<div class="w-12 h-12 bg-brand-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+  <span class="text-white text-xl">👥</span>
+</div>
+                <h3 class="font-semibold text-gray-900 mb-2">Skilled Team</h3>
+                <p class="text-sm text-gray-600">8+ years expertise</p>
+              </div>
+              <div class="text-center p-6 bg-gradient-to-br from-slate-50 to-gray-50 rounded-2xl">
+                <div class="w-12 h-12 bg-slate-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-globe-americas text-white"></i>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2">Global Reach</h3>
+                <p class="text-sm text-gray-600">Worldwide clients</p>
+              </div>
+              <div class="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl">
+                <div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <i class="fas fa-handshake text-white"></i>
+                </div>
+                <h3 class="font-semibold text-gray-900 mb-2">Flexibility</h3>
+                <p class="text-sm text-gray-600">Client-first approach</p>
+              </div>
+            </div>
+            
+            <a href="#services" class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-700 transition-colors">
+              Learn More About Our Services
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+          
+          <div class="relative">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="space-y-6">
+                <div class="h-48 bg-gradient-to-br from-brand-100 to-brand-200 rounded-2xl overflow-hidden transform hover:scale-105 transition-transform">
+                  <div class="w-full h-full bg-gradient-to-br from-brand-600/20 to-transparent flex items-center justify-center">
+                    <i class="fas fa-laptop-code text-4xl text-brand-600"></i>
+                  </div>
+                </div>
+                <div class="h-32 bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl overflow-hidden transform hover:scale-105 transition-transform">
+                  <div class="w-full h-full bg-gradient-to-br from-slate-600/20 to-transparent flex items-center justify-center">
+                    <i class="fas fa-chart-bar text-2xl text-slate-600"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="space-y-6 pt-12">
+                <div class="h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden transform hover:scale-105 transition-transform">
+                  <div class="w-full h-full bg-gradient-to-br from-blue-600/20 to-transparent flex items-center justify-center">
+                    <i class="fas fa-cogs text-2xl text-blue-600"></i>
+                  </div>
+                </div>
+                <div class="h-48 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-2xl overflow-hidden transform hover:scale-105 transition-transform">
+                  <div class="w-full h-full bg-gradient-to-br from-emerald-600/20 to-transparent flex items-center justify-center">
+                    <i class="fas fa-handshake text-4xl text-emerald-600"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-gray-50 to-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="inline-block px-4 py-2 bg-brand-100 text-brand-700 rounded-full text-sm font-medium mb-4">Services</span>
+          <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+            Running your business at<br>
+            <span class="text-brand-600">peak performance</span>
+          </h2>
+        </div>
+        
+        <div class="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
+          <!-- Service 1: IFS Implementations -->
+          <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+<div class="w-16 h-16 bg-gradient-to-br from-brand-500 to-brand-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+  <span class="text-white text-2xl">🚀</span>
+</div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">IFS Implementations & Upgrades</h3>
+            <p class="text-gray-600 mb-6">Maximize efficiency with access to every IFS enterprise solution and our certified techno-functional team.</p>
+            <a href="#contact" class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-700 transition-colors">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+          
+          <!-- Service 2: IFS Support -->
+          <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="w-16 h-16 bg-gradient-to-br from-slate-500 to-slate-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-headset text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">IFS Support</h3>
+            <p class="text-gray-600 mb-6">As a Prime IFS partner, we provide world-class support with priority access to IFS resources.</p>
+            <a href="#contact" class="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition-colors">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+          
+          <!-- Service 3: Web & Mobile -->
+          <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-mobile-alt text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">Web & Mobile Development</h3>
+            <p class="text-gray-600 mb-6">High-end and secure mobile and web applications in partnership with OBM Digital Factory.</p>
+            <a href="#contact" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+          
+          <!-- Service 4: SEBSA Academy -->
+          <div class="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <i class="fas fa-graduation-cap text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">SEBSA Academy</h3>
+            <p class="text-gray-600 mb-6">Experienced trainers providing well-organized and engaging IFS training online or on-site.</p>
+            <a href="#contact" class="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700 transition-colors">
+              Learn More
+              <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="inline-block px-4 py-2 bg-brand-100 text-brand-700 rounded-full text-sm font-medium mb-4">Latest News</span>
+          <h2 class="text-4xl font-bold text-gray-900">Stay Updated</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- News Article 1 -->
+          <article class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+<div class="h-48 bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center">
+  <span class="text-white text-4xl">📈</span>
+</div>
+            <div class="p-6">
+              <time class="text-sm text-gray-500 mb-2 block">October 10, 2024</time>
+              <h3 class="font-bold text-gray-900 mb-3 line-clamp-2">SEBSA's Growth Takes Flight with the Acquisition of CONIFS Global</h3>
+              <a href="#" class="inline-flex items-center text-brand-600 font-semibold hover:text-brand-700 transition-colors">
+                Read More
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+          
+          <!-- News Article 2 -->
+          <article class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="h-48 bg-gradient-to-br from-slate-400 to-slate-600 flex items-center justify-center">
+              <i class="fas fa-handshake text-white text-4xl"></i>
+            </div>
+            <div class="p-6">
+              <time class="text-sm text-gray-500 mb-2 block">January 19, 2024</time>
+              <h3 class="font-bold text-gray-900 mb-3 line-clamp-2">SEBSA & Sorcha Strategic Partnership in the UK</h3>
+              <a href="#" class="inline-flex items-center text-slate-600 font-semibold hover:text-slate-700 transition-colors">
+                Read More
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+          
+          <!-- News Article 3 -->
+          <article class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+            <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+              <i class="fas fa-university text-white text-4xl"></i>
+            </div>
+            <div class="p-6">
+              <time class="text-sm text-gray-500 mb-2 block">September 19, 2023</time>
+              <h3 class="font-bold text-gray-900 mb-3 line-clamp-2">Partnership with University of Moratuwa</h3>
+              <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+                Read More
+                <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-800 to-gray-900 text-white relative overflow-hidden">
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute top-10 left-10 w-32 h-32 border border-white/20 rounded-full"></div>
+        <div class="absolute top-1/4 right-20 w-24 h-24 border border-white/20 rounded-full"></div>
+        <div class="absolute bottom-20 left-1/4 w-16 h-16 border border-white/20 rounded-full"></div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Contact Information -->
+          <div class="space-y-8">
+            <div class="space-y-4">
+              <span class="inline-block px-4 py-2 bg-white/10 text-white rounded-full text-sm font-medium">Contact Us</span>
+              <h2 class="text-4xl lg:text-5xl font-bold">
+                Take the <span class="text-brand-400">First Step</span>
+              </h2>
+              <p class="text-xl text-gray-300 leading-relaxed">
+                Let's work together to bring your vision to life. Reach out to us, and we will get in touch with you soon.
+              </p>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                  <i class="fas fa-globe text-brand-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold">Global Presence</h3>
+                  <p class="text-gray-300">Sri Lanka | Sweden | Denmark | USA | UK | Middle East</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                  <i class="fas fa-clock text-brand-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold">24/7 Support</h3>
+                  <p class="text-gray-300">Round-the-clock assistance across all time zones</p>
+                </div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
+                  <i class="fas fa-award text-brand-400"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold">IFS Prime Partner</h3>
+                  <p class="text-gray-300">Certified excellence in ERP solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 border border-white/20">
+            <form class="space-y-6" id="contact-form">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <input type="text" name="name" placeholder="Your Name" required 
+                         class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all">
+                </div>
+                <div>
+                  <input type="email" name="email" placeholder="Business Email" required 
+                         class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all">
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <input type="tel" name="phone" placeholder="Phone Number" required 
+                         class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all">
+                </div>
+                <div>
+                  <input type="text" name="company" placeholder="Company" required 
+                         class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all">
+                </div>
+              </div>
+              <div>
+                <textarea name="message" rows="4" placeholder="Tell us about your project..." required 
+                          class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:border-transparent transition-all resize-none"></textarea>
+              </div>
+              <button type="submit" 
+                      class="w-full bg-gradient-to-r from-brand-500 to-brand-600 text-white font-semibold py-4 rounded-xl hover:from-brand-600 hover:to-brand-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Send Message
+                <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid lg:grid-cols-4 gap-12">
+        <!-- Brand Section -->
+        <div class="lg:col-span-2 space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="w-12 h-12 bg-gradient-to-br from-brand-500 to-brand-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-xl">S</span>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold">SEBSA</h3>
+              <p class="text-gray-400">Your ERP Partner of Choice</p>
+            </div>
+          </div>
+          <p class="text-gray-300 max-w-md">
+            Delivering simple, fast and accurate ERP solutions that provide a solid foundation for businesses to achieve operational excellence worldwide.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-600 transition-colors" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-semibold">Quick Links</h4>
+          <ul class="space-y-3">
+            <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+            <li><a href="#news" class="text-gray-300 hover:text-white transition-colors">News</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Careers</a></li>
+            <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services Links -->
+        <div class="space-y-6">
+          <h4 class="text-lg font-semibold">Services</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">IFS Consulting</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Customer Success</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Integration Services</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Web & Mobile</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white transition-colors">SEBSA Academy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-gray-400 text-sm">
+            © 2025 SEBSA (Pvt) Ltd. All Rights Reserved. | 
+            <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+          </p>
+          <p class="text-gray-400 text-sm">
+            Industrial and Financial Systems, IFS AB is the proprietor of IFS® trademark.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.offsetTop;
+          const offsetPosition = elementPosition - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Contact form handling
+    document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      
+      // Simulate form submission
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn?.innerHTML;
+      
+      if (submitBtn) {
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent!';
+          submitBtn.classList.remove('from-brand-500', 'to-brand-600');
+          submitBtn.classList.add('bg-green-600');
+          
+          // Reset form
+          setTimeout(() => {
+            this.reset();
+            if (originalText) {
+              submitBtn.innerHTML = originalText;
+            }
+            submitBtn.disabled = false;
+            submitBtn.classList.add('from-brand-500', 'to-brand-600');
+            submitBtn.classList.remove('bg-green-600');
+          }, 2000);
+        }, 1500);
+      }
+    });
+
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections for scroll animations
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </Layout>
